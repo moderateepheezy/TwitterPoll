@@ -1,0 +1,888 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06FD7270B252C4DD851BCF51D548CF8F /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7562C23810CDBFA6E6C7B53792D21294 /* UILabelExtensions.swift */; };
+		19E3F4194812917DD102D7DA99376CE7 /* Pods-TwitterPoll-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD153011E8677B3A27B8939AC895806 /* Pods-TwitterPoll-dummy.m */; };
+		406EDF08ED4B35853894560A19C67E7E /* VerticalLabelPositionFrameCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C43AE9DDFA1832E053195A305B15D2 /* VerticalLabelPositionFrameCalculator.swift */; };
+		5386F0C78244FB4AFDCD84CE5A9D0CAA /* Pods-TwitterPollUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D02F62FE4891B7207A76B1D0E694756 /* Pods-TwitterPollUITests-dummy.m */; };
+		5F05D2BAD1D4A0BA6DF3DA55BAF1B30A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		8CCEC9527D2615EABF22825FD7179FA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		9622F875348881CE430496BD1B9F6EC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A1BB2D9BC488A473723717CE841EE97B /* Pods-TwitterPollUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A7C764793FBEF3F7C30A90CDFF3EB40 /* Pods-TwitterPollUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A33A84F651161D3EC2F307D8830FF9A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A444CE3F68235E2975ABFF4231F7D094 /* Pods-TwitterPollTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47D0A3B4FF99E3C16F598A084EA5E7EA /* Pods-TwitterPollTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4B77763DD43A8ADEA25E5B9F4D4FB4D /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899797B2952F63B50BBDCD0F3BF7DE50 /* UIViewExtensions.swift */; };
+		B8CDD89B14A5C872A06586714346A299 /* HorizontalLabelPositionFrameCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566FDC6316345E995245C578B03AD3FA /* HorizontalLabelPositionFrameCalculator.swift */; };
+		C20A835EC622A8817DBE2C06DA99C944 /* GTProgressBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B494DBC4283FF069BDE97E56F4D115E8 /* GTProgressBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD52FEA39820F5FF5A708590BB1141EE /* GTProgressBarOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420B36329AC8CAA8DF5FB91024FBBA2B /* GTProgressBarOrientation.swift */; };
+		DDD7CFFACDE1F73B076FCFD8D92C3381 /* GTProgressBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C782839E999E5F89FD067E1C8CFB5E66 /* GTProgressBar-dummy.m */; };
+		F040875E78001469F01055583B858D87 /* GTProgressBarLabelPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E91F41599B279A59954AF196CD5FAE /* GTProgressBarLabelPosition.swift */; };
+		F138A17ACE60432AA4E276C721F6F534 /* Pods-TwitterPoll-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58221A4DFBDDF3A329B2A12D4F982B09 /* Pods-TwitterPoll-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F563CC18AD5DE8256E24C3DD940F9122 /* Pods-TwitterPollTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B6838598A4582685DEF109DE061FF1 /* Pods-TwitterPollTests-dummy.m */; };
+		FAA5021BB0CC78095EFCCAD13FB24EA2 /* FrameCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF1C22D9AD6D9BF9CFB1C70272F94FC /* FrameCalculator.swift */; };
+		FEC2FE6FF59255E3994FA7879A118A43 /* GTProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B92AA03C1E4BDC6EEE1FBEF5FABEBA /* GTProgressBar.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C82AF8AEB1A03BA29C08EAF39A1558E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACA1B61B5468752B05AB2932D39F7321;
+			remoteInfo = GTProgressBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07DED1E155F3E5845F93CC7BF2CB1D6E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A7C764793FBEF3F7C30A90CDFF3EB40 /* Pods-TwitterPollUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TwitterPollUITests-umbrella.h"; sourceTree = "<group>"; };
+		0AC570495D5F1B16A0BCFDDED3F4A870 /* Pods_TwitterPoll.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TwitterPoll.framework; path = "Pods-TwitterPoll.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13391F0E6833A0CC785EB2C6BC82AC63 /* Pods-TwitterPollTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TwitterPollTests-resources.sh"; sourceTree = "<group>"; };
+		1D02F62FE4891B7207A76B1D0E694756 /* Pods-TwitterPollUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TwitterPollUITests-dummy.m"; sourceTree = "<group>"; };
+		290722D5ED89DD85825480E6CC947434 /* Pods-TwitterPollTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TwitterPollTests.release.xcconfig"; sourceTree = "<group>"; };
+		2AD153011E8677B3A27B8939AC895806 /* Pods-TwitterPoll-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TwitterPoll-dummy.m"; sourceTree = "<group>"; };
+		3B131875B7806322E937B31C5C13CE5D /* Pods-TwitterPollTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TwitterPollTests-frameworks.sh"; sourceTree = "<group>"; };
+		3DE1B67F8400B44C25B03645DD330393 /* Pods-TwitterPoll-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TwitterPoll-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3DF1C22D9AD6D9BF9CFB1C70272F94FC /* FrameCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameCalculator.swift; path = GTProgressBar/Classes/FrameCalculator.swift; sourceTree = "<group>"; };
+		412B7C523B613AD19D75DD02987F2114 /* Pods_TwitterPollUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TwitterPollUITests.framework; path = "Pods-TwitterPollUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		420B36329AC8CAA8DF5FB91024FBBA2B /* GTProgressBarOrientation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GTProgressBarOrientation.swift; path = GTProgressBar/Classes/GTProgressBarOrientation.swift; sourceTree = "<group>"; };
+		47669DFB7C62ED72ABF5E885641BDFDD /* Pods-TwitterPollUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TwitterPollUITests-resources.sh"; sourceTree = "<group>"; };
+		47D0A3B4FF99E3C16F598A084EA5E7EA /* Pods-TwitterPollTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TwitterPollTests-umbrella.h"; sourceTree = "<group>"; };
+		4D9569BA02BBCC99C9FD025802440A88 /* Pods-TwitterPoll.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TwitterPoll.debug.xcconfig"; sourceTree = "<group>"; };
+		4F192AEE479C91F2BB6791968E88972B /* Pods-TwitterPollTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TwitterPollTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		509FCA9774CBB7611572D524EF9B2174 /* Pods-TwitterPollTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TwitterPollTests.modulemap"; sourceTree = "<group>"; };
+		566FDC6316345E995245C578B03AD3FA /* HorizontalLabelPositionFrameCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HorizontalLabelPositionFrameCalculator.swift; path = GTProgressBar/Classes/HorizontalLabelPositionFrameCalculator.swift; sourceTree = "<group>"; };
+		58221A4DFBDDF3A329B2A12D4F982B09 /* Pods-TwitterPoll-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TwitterPoll-umbrella.h"; sourceTree = "<group>"; };
+		5B3AFE1C781FE0DF79A0E1068AE0DF46 /* Pods-TwitterPoll-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TwitterPoll-resources.sh"; sourceTree = "<group>"; };
+		5B974AB63810A526CA093AAB64880D4F /* Pods_TwitterPollTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TwitterPollTests.framework; path = "Pods-TwitterPollTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EC409D4F231C56A4DB1E0EED4FB2304 /* Pods-TwitterPoll-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TwitterPoll-frameworks.sh"; sourceTree = "<group>"; };
+		62FA12D25266F3F64B86A25A2138BA30 /* Pods-TwitterPoll.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TwitterPoll.release.xcconfig"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		67C1D883A9669CABAFE42A0231ABEE63 /* Pods-TwitterPoll.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TwitterPoll.modulemap"; sourceTree = "<group>"; };
+		6A313FD4379B45EAF6260C60A4DE9DEF /* Pods-TwitterPollUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TwitterPollUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6FE8AAF52116FC88BDF8BB6216CCD7EA /* GTProgressBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GTProgressBar.modulemap; sourceTree = "<group>"; };
+		70B6838598A4582685DEF109DE061FF1 /* Pods-TwitterPollTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TwitterPollTests-dummy.m"; sourceTree = "<group>"; };
+		7562C23810CDBFA6E6C7B53792D21294 /* UILabelExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UILabelExtensions.swift; path = GTProgressBar/Classes/UILabelExtensions.swift; sourceTree = "<group>"; };
+		899797B2952F63B50BBDCD0F3BF7DE50 /* UIViewExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewExtensions.swift; path = GTProgressBar/Classes/UIViewExtensions.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94866AAB320B68099D484DBBA37F19FD /* GTProgressBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTProgressBar-prefix.pch"; sourceTree = "<group>"; };
+		964601267971CB6C8F7D8DD8E5C4D801 /* Pods-TwitterPollUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TwitterPollUITests-frameworks.sh"; sourceTree = "<group>"; };
+		B48E8AA86A02636C1C0379A750DF9DFD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B494DBC4283FF069BDE97E56F4D115E8 /* GTProgressBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GTProgressBar-umbrella.h"; sourceTree = "<group>"; };
+		B6533187EDB7D8A1963C3BEFFAA00648 /* Pods-TwitterPollUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TwitterPollUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C21B0D0FC51402E655EDA3D1C830BC98 /* GTProgressBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GTProgressBar.framework; path = GTProgressBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C782839E999E5F89FD067E1C8CFB5E66 /* GTProgressBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GTProgressBar-dummy.m"; sourceTree = "<group>"; };
+		C7B92AA03C1E4BDC6EEE1FBEF5FABEBA /* GTProgressBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GTProgressBar.swift; path = GTProgressBar/Classes/GTProgressBar.swift; sourceTree = "<group>"; };
+		C996B74F401ED3429835F060888301EE /* Pods-TwitterPollUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TwitterPollUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE8D8E0337E03D280FC4B3338424E4FE /* Pods-TwitterPollUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TwitterPollUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D3266C01DD8D67DB8782E7D091F2AE32 /* Pods-TwitterPollUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TwitterPollUITests.modulemap"; sourceTree = "<group>"; };
+		D4FA5C26AE057FEC6194F49F8A515B90 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7C43AE9DDFA1832E053195A305B15D2 /* VerticalLabelPositionFrameCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VerticalLabelPositionFrameCalculator.swift; path = GTProgressBar/Classes/VerticalLabelPositionFrameCalculator.swift; sourceTree = "<group>"; };
+		E8C125466A676982DB4433AC262886E0 /* Pods-TwitterPoll-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TwitterPoll-acknowledgements.plist"; sourceTree = "<group>"; };
+		EB1251C73CD905FA11BFDEC11A2BB55D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBAA674D167C2185DB193FE97C6C9C80 /* Pods-TwitterPollTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TwitterPollTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F10C0ED0A936AE4879BD11D5AD279D3F /* Pods-TwitterPollTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TwitterPollTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F77DE74C529C8843A72FB07AD10BE50C /* GTProgressBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GTProgressBar.xcconfig; sourceTree = "<group>"; };
+		F9E91F41599B279A59954AF196CD5FAE /* GTProgressBarLabelPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GTProgressBarLabelPosition.swift; path = GTProgressBar/Classes/GTProgressBarLabelPosition.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		571EFDDEA3EFF4BF81954AB6021491EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9622F875348881CE430496BD1B9F6EC8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B09D552DA4F4F0039C159E245E5D3A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CCEC9527D2615EABF22825FD7179FA6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		861CFCAA7EFF79372434B43A9D004349 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F05D2BAD1D4A0BA6DF3DA55BAF1B30A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D40760F88175B7715F8C88779BF596E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A33A84F651161D3EC2F307D8830FF9A2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		092270DAB22DB77A0B5F3B8293B40379 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				31EDACF32E0C63BB5B0DD70564682419 /* Pods-TwitterPoll */,
+				F0C7DE2FC0DF5F09617F6E88BBA38DF1 /* Pods-TwitterPollTests */,
+				479F2EEBED0E8D89087474A3AAB433E4 /* Pods-TwitterPollUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		31EDACF32E0C63BB5B0DD70564682419 /* Pods-TwitterPoll */ = {
+			isa = PBXGroup;
+			children = (
+				EB1251C73CD905FA11BFDEC11A2BB55D /* Info.plist */,
+				67C1D883A9669CABAFE42A0231ABEE63 /* Pods-TwitterPoll.modulemap */,
+				3DE1B67F8400B44C25B03645DD330393 /* Pods-TwitterPoll-acknowledgements.markdown */,
+				E8C125466A676982DB4433AC262886E0 /* Pods-TwitterPoll-acknowledgements.plist */,
+				2AD153011E8677B3A27B8939AC895806 /* Pods-TwitterPoll-dummy.m */,
+				5EC409D4F231C56A4DB1E0EED4FB2304 /* Pods-TwitterPoll-frameworks.sh */,
+				5B3AFE1C781FE0DF79A0E1068AE0DF46 /* Pods-TwitterPoll-resources.sh */,
+				58221A4DFBDDF3A329B2A12D4F982B09 /* Pods-TwitterPoll-umbrella.h */,
+				4D9569BA02BBCC99C9FD025802440A88 /* Pods-TwitterPoll.debug.xcconfig */,
+				62FA12D25266F3F64B86A25A2138BA30 /* Pods-TwitterPoll.release.xcconfig */,
+			);
+			name = "Pods-TwitterPoll";
+			path = "Target Support Files/Pods-TwitterPoll";
+			sourceTree = "<group>";
+		};
+		479F2EEBED0E8D89087474A3AAB433E4 /* Pods-TwitterPollUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D4FA5C26AE057FEC6194F49F8A515B90 /* Info.plist */,
+				D3266C01DD8D67DB8782E7D091F2AE32 /* Pods-TwitterPollUITests.modulemap */,
+				CE8D8E0337E03D280FC4B3338424E4FE /* Pods-TwitterPollUITests-acknowledgements.markdown */,
+				6A313FD4379B45EAF6260C60A4DE9DEF /* Pods-TwitterPollUITests-acknowledgements.plist */,
+				1D02F62FE4891B7207A76B1D0E694756 /* Pods-TwitterPollUITests-dummy.m */,
+				964601267971CB6C8F7D8DD8E5C4D801 /* Pods-TwitterPollUITests-frameworks.sh */,
+				47669DFB7C62ED72ABF5E885641BDFDD /* Pods-TwitterPollUITests-resources.sh */,
+				0A7C764793FBEF3F7C30A90CDFF3EB40 /* Pods-TwitterPollUITests-umbrella.h */,
+				C996B74F401ED3429835F060888301EE /* Pods-TwitterPollUITests.debug.xcconfig */,
+				B6533187EDB7D8A1963C3BEFFAA00648 /* Pods-TwitterPollUITests.release.xcconfig */,
+			);
+			name = "Pods-TwitterPollUITests";
+			path = "Target Support Files/Pods-TwitterPollUITests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				A123ABAFA975D47477D71D22FF0AF7D8 /* Pods */,
+				BD998FCDD5C9B4DE454EE3E7EC224B47 /* Products */,
+				092270DAB22DB77A0B5F3B8293B40379 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A123ABAFA975D47477D71D22FF0AF7D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0CF42AC15FA46ADB01EA562344E9734 /* GTProgressBar */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B6F3A97B711FBC22061003BA0357982A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6FE8AAF52116FC88BDF8BB6216CCD7EA /* GTProgressBar.modulemap */,
+				F77DE74C529C8843A72FB07AD10BE50C /* GTProgressBar.xcconfig */,
+				C782839E999E5F89FD067E1C8CFB5E66 /* GTProgressBar-dummy.m */,
+				94866AAB320B68099D484DBBA37F19FD /* GTProgressBar-prefix.pch */,
+				B494DBC4283FF069BDE97E56F4D115E8 /* GTProgressBar-umbrella.h */,
+				07DED1E155F3E5845F93CC7BF2CB1D6E /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GTProgressBar";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD998FCDD5C9B4DE454EE3E7EC224B47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C21B0D0FC51402E655EDA3D1C830BC98 /* GTProgressBar.framework */,
+				0AC570495D5F1B16A0BCFDDED3F4A870 /* Pods_TwitterPoll.framework */,
+				5B974AB63810A526CA093AAB64880D4F /* Pods_TwitterPollTests.framework */,
+				412B7C523B613AD19D75DD02987F2114 /* Pods_TwitterPollUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0CF42AC15FA46ADB01EA562344E9734 /* GTProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				3DF1C22D9AD6D9BF9CFB1C70272F94FC /* FrameCalculator.swift */,
+				C7B92AA03C1E4BDC6EEE1FBEF5FABEBA /* GTProgressBar.swift */,
+				F9E91F41599B279A59954AF196CD5FAE /* GTProgressBarLabelPosition.swift */,
+				420B36329AC8CAA8DF5FB91024FBBA2B /* GTProgressBarOrientation.swift */,
+				566FDC6316345E995245C578B03AD3FA /* HorizontalLabelPositionFrameCalculator.swift */,
+				7562C23810CDBFA6E6C7B53792D21294 /* UILabelExtensions.swift */,
+				899797B2952F63B50BBDCD0F3BF7DE50 /* UIViewExtensions.swift */,
+				D7C43AE9DDFA1832E053195A305B15D2 /* VerticalLabelPositionFrameCalculator.swift */,
+				B6F3A97B711FBC22061003BA0357982A /* Support Files */,
+			);
+			name = GTProgressBar;
+			path = GTProgressBar;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F0C7DE2FC0DF5F09617F6E88BBA38DF1 /* Pods-TwitterPollTests */ = {
+			isa = PBXGroup;
+			children = (
+				B48E8AA86A02636C1C0379A750DF9DFD /* Info.plist */,
+				509FCA9774CBB7611572D524EF9B2174 /* Pods-TwitterPollTests.modulemap */,
+				EBAA674D167C2185DB193FE97C6C9C80 /* Pods-TwitterPollTests-acknowledgements.markdown */,
+				4F192AEE479C91F2BB6791968E88972B /* Pods-TwitterPollTests-acknowledgements.plist */,
+				70B6838598A4582685DEF109DE061FF1 /* Pods-TwitterPollTests-dummy.m */,
+				3B131875B7806322E937B31C5C13CE5D /* Pods-TwitterPollTests-frameworks.sh */,
+				13391F0E6833A0CC785EB2C6BC82AC63 /* Pods-TwitterPollTests-resources.sh */,
+				47D0A3B4FF99E3C16F598A084EA5E7EA /* Pods-TwitterPollTests-umbrella.h */,
+				F10C0ED0A936AE4879BD11D5AD279D3F /* Pods-TwitterPollTests.debug.xcconfig */,
+				290722D5ED89DD85825480E6CC947434 /* Pods-TwitterPollTests.release.xcconfig */,
+			);
+			name = "Pods-TwitterPollTests";
+			path = "Target Support Files/Pods-TwitterPollTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		548909CCBC93A41F9DEDAD657B2BB8B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F138A17ACE60432AA4E276C721F6F534 /* Pods-TwitterPoll-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61DB5A1AEB22EB58F5432B4024C0BC57 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1BB2D9BC488A473723717CE841EE97B /* Pods-TwitterPollUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E1B9B239CDAFEF425D71D68A4E49CA6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C20A835EC622A8817DBE2C06DA99C944 /* GTProgressBar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBF1E676EDD219B15063217C22C804F2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A444CE3F68235E2975ABFF4231F7D094 /* Pods-TwitterPollTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		117985D9AC063DFF73DD530F63127CA5 /* Pods-TwitterPollUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7DD309B8790CA7B44C9896D44D6F5FD /* Build configuration list for PBXNativeTarget "Pods-TwitterPollUITests" */;
+			buildPhases = (
+				51410A986019A8FE56397F8F66107928 /* Sources */,
+				861CFCAA7EFF79372434B43A9D004349 /* Frameworks */,
+				61DB5A1AEB22EB58F5432B4024C0BC57 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TwitterPollUITests";
+			productName = "Pods-TwitterPollUITests";
+			productReference = 412B7C523B613AD19D75DD02987F2114 /* Pods_TwitterPollUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		17C02BDA0BF7026C8ED12536F1BC37F4 /* Pods-TwitterPoll */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48270EBE87E5BA40B6CEC75BF0E902FE /* Build configuration list for PBXNativeTarget "Pods-TwitterPoll" */;
+			buildPhases = (
+				B8088C22EA412F6F076B3FFBA30F4231 /* Sources */,
+				7B09D552DA4F4F0039C159E245E5D3A8 /* Frameworks */,
+				548909CCBC93A41F9DEDAD657B2BB8B0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2F98138F9B894DD526AB287223F1A13B /* PBXTargetDependency */,
+			);
+			name = "Pods-TwitterPoll";
+			productName = "Pods-TwitterPoll";
+			productReference = 0AC570495D5F1B16A0BCFDDED3F4A870 /* Pods_TwitterPoll.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		779D81FE6787B0C066E210AEB5CC5939 /* Pods-TwitterPollTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A21AB164EF46152DA357683E124E8810 /* Build configuration list for PBXNativeTarget "Pods-TwitterPollTests" */;
+			buildPhases = (
+				3A9653475E3B904FACE9F1CE64855C04 /* Sources */,
+				571EFDDEA3EFF4BF81954AB6021491EF /* Frameworks */,
+				DBF1E676EDD219B15063217C22C804F2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TwitterPollTests";
+			productName = "Pods-TwitterPollTests";
+			productReference = 5B974AB63810A526CA093AAB64880D4F /* Pods_TwitterPollTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ACA1B61B5468752B05AB2932D39F7321 /* GTProgressBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE82686C18760044905A3109316CCD82 /* Build configuration list for PBXNativeTarget "GTProgressBar" */;
+			buildPhases = (
+				7EDC8300963D93FDE590DB3589B2E107 /* Sources */,
+				8D40760F88175B7715F8C88779BF596E /* Frameworks */,
+				6E1B9B239CDAFEF425D71D68A4E49CA6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GTProgressBar;
+			productName = GTProgressBar;
+			productReference = C21B0D0FC51402E655EDA3D1C830BC98 /* GTProgressBar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = BD998FCDD5C9B4DE454EE3E7EC224B47 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACA1B61B5468752B05AB2932D39F7321 /* GTProgressBar */,
+				17C02BDA0BF7026C8ED12536F1BC37F4 /* Pods-TwitterPoll */,
+				779D81FE6787B0C066E210AEB5CC5939 /* Pods-TwitterPollTests */,
+				117985D9AC063DFF73DD530F63127CA5 /* Pods-TwitterPollUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A9653475E3B904FACE9F1CE64855C04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F563CC18AD5DE8256E24C3DD940F9122 /* Pods-TwitterPollTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51410A986019A8FE56397F8F66107928 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5386F0C78244FB4AFDCD84CE5A9D0CAA /* Pods-TwitterPollUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EDC8300963D93FDE590DB3589B2E107 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAA5021BB0CC78095EFCCAD13FB24EA2 /* FrameCalculator.swift in Sources */,
+				DDD7CFFACDE1F73B076FCFD8D92C3381 /* GTProgressBar-dummy.m in Sources */,
+				FEC2FE6FF59255E3994FA7879A118A43 /* GTProgressBar.swift in Sources */,
+				F040875E78001469F01055583B858D87 /* GTProgressBarLabelPosition.swift in Sources */,
+				DD52FEA39820F5FF5A708590BB1141EE /* GTProgressBarOrientation.swift in Sources */,
+				B8CDD89B14A5C872A06586714346A299 /* HorizontalLabelPositionFrameCalculator.swift in Sources */,
+				06FD7270B252C4DD851BCF51D548CF8F /* UILabelExtensions.swift in Sources */,
+				A4B77763DD43A8ADEA25E5B9F4D4FB4D /* UIViewExtensions.swift in Sources */,
+				406EDF08ED4B35853894560A19C67E7E /* VerticalLabelPositionFrameCalculator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8088C22EA412F6F076B3FFBA30F4231 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19E3F4194812917DD102D7DA99376CE7 /* Pods-TwitterPoll-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2F98138F9B894DD526AB287223F1A13B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GTProgressBar;
+			target = ACA1B61B5468752B05AB2932D39F7321 /* GTProgressBar */;
+			targetProxy = C82AF8AEB1A03BA29C08EAF39A1558E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D23278938ADF334174C5BF2A4B6B1B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		4DA8ED77ACA41DE4E93F72D6274CECE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 290722D5ED89DD85825480E6CC947434 /* Pods-TwitterPollTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TwitterPollTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TwitterPollTests/Pods-TwitterPollTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TwitterPollTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5305B0692A9617BF78FE4969267A1227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F77DE74C529C8843A72FB07AD10BE50C /* GTProgressBar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GTProgressBar/GTProgressBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GTProgressBar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GTProgressBar/GTProgressBar.modulemap";
+				PRODUCT_NAME = GTProgressBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8182A466C65920580C394609E1448446 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F77DE74C529C8843A72FB07AD10BE50C /* GTProgressBar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GTProgressBar/GTProgressBar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GTProgressBar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GTProgressBar/GTProgressBar.modulemap";
+				PRODUCT_NAME = GTProgressBar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DF21553C211BA848C2F10F64BF4BFD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6533187EDB7D8A1963C3BEFFAA00648 /* Pods-TwitterPollUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TwitterPollUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TwitterPollUITests/Pods-TwitterPollUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TwitterPollUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		995C3A53DEAA96B47E756185345E180D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9CA437925F79BA0253176A119824F4A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D9569BA02BBCC99C9FD025802440A88 /* Pods-TwitterPoll.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TwitterPoll/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TwitterPoll/Pods-TwitterPoll.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TwitterPoll;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A9146FF547CEC4D0E79C5440364B3D87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62FA12D25266F3F64B86A25A2138BA30 /* Pods-TwitterPoll.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TwitterPoll/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TwitterPoll/Pods-TwitterPoll.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TwitterPoll;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BAE4B32CC8328B9DD181AF618C4CFB04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C996B74F401ED3429835F060888301EE /* Pods-TwitterPollUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TwitterPollUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TwitterPollUITests/Pods-TwitterPollUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TwitterPollUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BB997F8D11627F842B79900F19A62317 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F10C0ED0A936AE4879BD11D5AD279D3F /* Pods-TwitterPollTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TwitterPollTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TwitterPollTests/Pods-TwitterPollTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TwitterPollTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				995C3A53DEAA96B47E756185345E180D /* Debug */,
+				1D23278938ADF334174C5BF2A4B6B1B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48270EBE87E5BA40B6CEC75BF0E902FE /* Build configuration list for PBXNativeTarget "Pods-TwitterPoll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CA437925F79BA0253176A119824F4A1 /* Debug */,
+				A9146FF547CEC4D0E79C5440364B3D87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A21AB164EF46152DA357683E124E8810 /* Build configuration list for PBXNativeTarget "Pods-TwitterPollTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB997F8D11627F842B79900F19A62317 /* Debug */,
+				4DA8ED77ACA41DE4E93F72D6274CECE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7DD309B8790CA7B44C9896D44D6F5FD /* Build configuration list for PBXNativeTarget "Pods-TwitterPollUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAE4B32CC8328B9DD181AF618C4CFB04 /* Debug */,
+				8DF21553C211BA848C2F10F64BF4BFD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE82686C18760044905A3109316CCD82 /* Build configuration list for PBXNativeTarget "GTProgressBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8182A466C65920580C394609E1448446 /* Debug */,
+				5305B0692A9617BF78FE4969267A1227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
