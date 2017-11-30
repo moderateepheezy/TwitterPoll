@@ -121,6 +121,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomTableViewCell
             cell.selectionStyle = .none
             cell.votingDelegate = self
+            cell.titleLabel.text = progressTexts[indexPath.item]
             return cell
         default:
             return UITableViewCell()
