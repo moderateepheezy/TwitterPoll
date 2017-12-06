@@ -21,7 +21,7 @@ class ViewController: UIViewController, VotingDelegate {
     }
     
 
-    let voteTableView: UITableView = {
+    var voteTableView: UITableView = {
        let tv = UITableView()
         tv.separatorStyle = .none
         tv.clipsToBounds = true
@@ -30,7 +30,7 @@ class ViewController: UIViewController, VotingDelegate {
         return tv
     }()
     
-    let resultTableView: UITableView = {
+    var resultTableView: UITableView = {
         let tv = UITableView()
         tv.separatorStyle = .none
         tv.clipsToBounds = true
@@ -68,7 +68,7 @@ class ViewController: UIViewController, VotingDelegate {
         containerView.addSubview(voteTableView)
         containerView.addSubview(resultTableView)
         
-        voteTableView.rowHeight = 65
+        voteTableView.rowHeight = 45
         resultTableView.rowHeight = 45
         voteTableView.delegate = self
         voteTableView.dataSource = self
@@ -87,13 +87,11 @@ class ViewController: UIViewController, VotingDelegate {
         if isResultsShow{
             self.resultTableView.isHidden = false
             self.voteTableView.isHidden = true
-            self.resultTableView.reloadData()
         }else{
             resultTableView.isHidden = true
             voteTableView.isHidden = false
         }
     }
-    
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource{
@@ -154,8 +152,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
 
 class CustomTableViewCell: UITableViewCell{
     
-    let containerHeight: CGFloat = 45
-    var votingDelegate: VotingDelegate?
+    let containerHeight: CGFloat = 35
+    weak var votingDelegate: VotingDelegate?
     
     var titleLabel: UILabel = {
        let label = UILabel()
@@ -201,9 +199,9 @@ class CustomTableViewCell: UITableViewCell{
     }
     
     func setupViews(){
-        containerView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
-        containerView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
-        containerView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+        containerView.topAnchor.constraint(equalTo: self.topAnchor, constant: 10).isActive = true
+        containerView.rightAnchor.constraint(equalTo: self.rightAnchor, constant: -10).isActive = true
+        containerView.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 10).isActive = true
         containerView.heightAnchor.constraint(equalToConstant: containerHeight).isActive = true
         
         titleLabel.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 10).isActive = true
