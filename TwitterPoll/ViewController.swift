@@ -72,8 +72,6 @@ class ViewController: UIViewController, VotingDelegate {
         resultTableView.rowHeight = 45
         voteTableView.delegate = self
         voteTableView.dataSource = self
-        resultTableView.delegate = self
-        resultTableView.dataSource = self
         
         voteTableView.register(CustomTableViewCell.self, forCellReuseIdentifier: "cell")
         resultTableView.register(UINib(nibName: "ResultCell", bundle: nil), forCellReuseIdentifier: "resultCell")
@@ -87,6 +85,10 @@ class ViewController: UIViewController, VotingDelegate {
         if isResultsShow{
             self.resultTableView.isHidden = false
             self.voteTableView.isHidden = true
+            
+            resultTableView.delegate = self
+            resultTableView.dataSource = self
+            
             self.resultTableView.reloadData()
         }else{
             resultTableView.isHidden = true
